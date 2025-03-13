@@ -14,7 +14,7 @@ import { loginStyles } from "../styles/loginStyles";
 
 export default function Registration(props) {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: "#FFFFFF" }}>
+    <View style={{ flex: 1 }}>
       <StatusBar translucent backgroundColor={"rgba(0,0,0,0.3)"} />
       
       <ImageBackground
@@ -86,6 +86,6 @@ export default function Registration(props) {
           </View>
         </ScrollView>
       </ImageBackground>
-    </SafeAreaView>
+    </View>
   );
 }

@@ -1,12 +1,10 @@
-
-
 import { useState } from "react"
 import { Text, View, SafeAreaView, StatusBar, FlatList, TouchableOpacity, Image } from "react-native"
 import { productStyle } from "../styles/productStyle"
 import { tags } from "../api/tags"
 import { products } from "../api/products"
 
-export default function Product({ navigation }) {
+export default function Product(props) {
   const [selectedTag, setSelectedTag] = useState("1") // Assuming first tag has id "1"
 
   return (
@@ -44,7 +42,7 @@ export default function Product({ navigation }) {
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
               <TouchableOpacity
-                onPress={() => navigation.navigate("Detail", { item })}
+                onPress={() => props.navigation.navigate("Detail", {item })}
                 style={productStyle.cardTouchable}
                 activeOpacity={0.7}
               >

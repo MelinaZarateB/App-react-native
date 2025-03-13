@@ -10,7 +10,7 @@ export const productStyle = StyleSheet.create({
   },
   header: {
     paddingHorizontal: 20,
-    paddingTop: 50,
+    paddingTop: 20,
     paddingBottom: 10,
   },
   headerTitle: {

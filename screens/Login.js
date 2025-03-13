@@ -1,6 +1,5 @@
 import {
   View,
-  SafeAreaView,
   StatusBar,
   TextInput,
   TouchableOpacity,
@@ -12,9 +11,8 @@ import { loginStyles } from "../styles/loginStyles";
 
 export default function Login(props) {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <StatusBar translucent backgroundColor={"rgba(0,0,0,0.3)"} />
-
+    <View style={{ flex: 1 }}>
+      <StatusBar barStyle="light-content" translucent />
       <ImageBackground
         source={require("../images/photo-1543353071-10c8ba85a904.avif")}
         style={loginStyles.backgroundImage}
@@ -74,6 +72,6 @@ export default function Login(props) {
           </View>
         </View>
       </ImageBackground>
-    </SafeAreaView>
+    </View>
   );
 }

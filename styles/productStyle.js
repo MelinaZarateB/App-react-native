@@ -138,5 +138,30 @@ export const productStyle = StyleSheet.create({
     fontWeight: "bold",
     lineHeight: 22,
   },
+   // Nuevos estilos para el estado vacío
+   emptyStateContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: 20,
+    marginTop: 50,
+  },
+  emptyStateText: {
+    fontSize: 16,
+    color: "#666",
+    textAlign: "center",
+    marginBottom: 20,
+  },
+  resetButton: {
+    backgroundColor: "#FD8E3E",
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 25,
+  },
+  resetButtonText: {
+    color: "white",
+    fontWeight: "600",
+    fontSize: 14,
+  },
 })
 
